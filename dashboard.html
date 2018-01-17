@@ -135,7 +135,7 @@
                                         <div class="col-md-12">
                                             <div class="row test_drive">
                                                 <div class="col-md-10">
-                                                    <a data-toggle="modal" data-target=".letest_drivebox" class="drive_name"><h4>Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a class="drive_name"><h4>Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
@@ -203,7 +203,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-10 text-right">
-                                                    <a data-toggle="modal" data-target=".letest_drivebox2" class="drive_name"><h4>Wit.ai <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a class="drive_name"><h4>Wit.ai <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
@@ -323,63 +323,64 @@
             <script type="text/javascript">
             $("document").ready(function() {
 
-
+                $(".modal-backdrop").css("display","none");
 
                 // test drive details popup starts here
 
+                  $(".black_box h4").click(function(){
 
-                $(".black_box h4").click(function detail_info() {
-                    var isOpen = $(".letest_drivebox").hasClass("in");
-                    if (isOpen) {
-                        $(".white_circle1").css("display", "none");
-                        $(".lc_container").css("display", "none");
-                        $(".letest_drivebox").css("display", "none");
-                    } else {
-                        $(".white_circle1").css("display", "block");
-                        $(".lc_container").css("display", "block")
 
-                        $(".lc_container").css({ "width": "100px", "transition": "0.5s", "opacity": "1" });
 
-                        $(".letest_drivebox").css({ "posittion": "absolute", "left": "455px", "display": "block", "transition": "0.5s", "width": "450px", "opacity": "1" });
-                    }
+                  
+                  $(".white_circle1").toggleClass("white_circleclick");
+                  $(".lc_container").toggleClass("lc_containerclick");
+                  $(".letest_drivebox").toggleClass("letest_driveboxclick");
+                  $(".modal-backdrop").toggleClass("overlay");                  
+                  var isOpen = $(".modal-backdrop").hasClass("overlay");
+                   if (isOpen) { 
+                        $(".modal-backdrop").css("display","block");
+                          
+                          }
+                        else
+                        {
+                             $(".modal-backdrop").css("display","none");
 
-                });
+                        }
 
-                $(".black_box h4").hover(function() {
 
-                    $("span.glyphicon-triangle-right .hidden").removeClass("hidden");
+                  });
 
-                });
+
+
+                
+
+
+
+
+
+
+
 
                 $(".black_box_right h4").click(function detail_info() {
+                     $(".white_circle1").removeClass("white_circleclick");
+                      $(".lc_container").removeClass("lc_containerclick");
+                       $(".letest_drivebox").removeClass("letest_driveboxclick");
 
-                    var isOpen = $(".letest_drivebox").hasClass("in");
-                    if (isOpen) {
-                        $(".white_circle2").css("display", "none");
-                        $(".lc_container2").css("display", "none");
-                        $(".letest_drivebox2").css("display", "none");
-                    } else {
-                        $(".white_circle1").css("display", "none");
-                        $(".lc_container").css("display", "none");
-                        $(".letest_drivebox").css("display", "none");
+                     $(".white_circle2").toggleClass("white_circleclick2");
+                  $(".lc_container2").toggleClass("lc_containerclick2");
+                  $(".letest_drivebox2").toggleClass("letest_driveboxclick2");
+                  $(".modal-backdrop2").toggleClass("overlay");
 
-                        $(".white_circle2").css("display", "block");
-                        $(".lc_container2").css("display", "block")
+                  var isOpen = $(".modal-backdrop").hasClass("overlay");
+                   if (isOpen) { 
+                        $(".modal-backdrop").css("display","block");
+                          
+                          }
+                        else
+                        {
+                             $(".modal-backdrop").css("display","none");
 
-                        $(".lc_container2").css({ "width": "100px", "transition": "0.5s", "opacity": "1", "box-direction": "reverse", "position": "absolute", "right": "0" });
-
-                        $(".letest_drivebox2").css({ "posittion": "absolute", "right": "440px", "display": "block", "transition": "0.5s", "width": "450px", "opacity": "1" });
-                    }
-
-
-
-
-                });
-
-                $(".black_box2 h4").hover(function() {
-
-                    $("span.glyphicon-triangle-right .hidden").removeClass("hidden");
-
+                        }                
                 });
 
 
@@ -492,6 +493,37 @@
                 valEl.text(parseInt(valEl.data('origVal') * progress))
             });
             </script>
+
+            <div class="modal-backdrop in" style="display: none;"></div>
+
+
+            <audio id="player" src="sound/StartCar.mp3"></audio>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var playing = true;
+        var audioEl = $('#player')[0]
+        audioEl.play();
+        $('a#button').click(function() {
+            if(playing){
+                playing = false;
+                audioEl.pause();
+                   $(this).removeClass('soundIcnPlay').addClass('soundIcnPause');
+            }else{
+                playing = true;
+                audioEl.play();
+                $(this).removeClass('soundIcnPause').addClass('soundIcnPlay');
+            }
+    
+        });
+
+      
+    });
+
+
+    </script>
+
+
 </body>
 
 </html>
