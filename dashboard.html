@@ -20,6 +20,9 @@
     <!-- material fonts starts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- material fonts ends-->
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body class="dash_back">
@@ -31,8 +34,28 @@
             <div class="col-md-12">
                 <div class="col-md-12" style="height: 360px;">
                     <div class="col-md-8" style="height: 360px;">
-                        <img src="images/map.png" style="height: 380px;
-                          margin-left: 96px;">
+                        <div class="map_container">
+                            <object>
+                                <embed src="images/track.svg">
+                                <a href="#" id="link1" class="maplinks"><img src="images/testdrivecenter.png" /><span>test drieves central</span></a>
+
+                                 <a href="#" id="link2" class="maplinks"><img src="images/refer.png" /><span>Refer a friend</span></a>
+
+
+                                 <a href="#" id="link3" class="maplinks"><img src="images/refer.png" /><span>My Profile</span></a>
+
+                                    <a href="#" id="link4" class="maplinks"><img src="images/Prizes.png" /><span>Prizes</span></a>
+
+                                    <a href="#" id="link5" class="maplinks"><img src="images/leaderboard.png" /><span>Leaderboard</span></a>
+
+                                    <a href="#" id="link6" class="maplinks"><img src="images/video.png" /><span>Video</span></a>
+
+                              
+
+
+                                </embed>
+                            </object>
+                        </div>
                     </div>
                     <div class="col-md-4" style="height: 360px;">
                         <div class="col-md-12">
@@ -323,36 +346,34 @@
             <script type="text/javascript">
             $("document").ready(function() {
 
-                $(".modal-backdrop").css("display","none");
+                $(".modal-backdrop").css("display", "none");
 
                 // test drive details popup starts here
 
-                  $(".black_box h4").click(function(){
+                $(".black_box h4").click(function() {
 
 
 
-                  
-                  $(".white_circle1").toggleClass("white_circleclick");
-                  $(".lc_container").toggleClass("lc_containerclick");
-                  $(".letest_drivebox").toggleClass("letest_driveboxclick");
-                  $(".modal-backdrop").toggleClass("overlay");                  
-                  var isOpen = $(".modal-backdrop").hasClass("overlay");
-                   if (isOpen) { 
-                        $(".modal-backdrop").css("display","block");
-                          
-                          }
-                        else
-                        {
-                             $(".modal-backdrop").css("display","none");
 
-                        }
+                    $(".white_circle1").toggleClass("white_circleclick");
+                    $(".lc_container").toggleClass("lc_containerclick");
+                    $(".letest_drivebox").toggleClass("letest_driveboxclick");
+                    $(".modal-backdrop").toggleClass("overlay");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
+
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
 
 
-                  });
+                });
 
 
 
-                
+
 
 
 
@@ -362,25 +383,23 @@
 
 
                 $(".black_box_right h4").click(function detail_info() {
-                     $(".white_circle1").removeClass("white_circleclick");
-                      $(".lc_container").removeClass("lc_containerclick");
-                       $(".letest_drivebox").removeClass("letest_driveboxclick");
+                    $(".white_circle1").removeClass("white_circleclick");
+                    $(".lc_container").removeClass("lc_containerclick");
+                    $(".letest_drivebox").removeClass("letest_driveboxclick");
 
-                     $(".white_circle2").toggleClass("white_circleclick2");
-                  $(".lc_container2").toggleClass("lc_containerclick2");
-                  $(".letest_drivebox2").toggleClass("letest_driveboxclick2");
-                  $(".modal-backdrop2").toggleClass("overlay");
+                    $(".white_circle2").toggleClass("white_circleclick2");
+                    $(".lc_container2").toggleClass("lc_containerclick2");
+                    $(".letest_drivebox2").toggleClass("letest_driveboxclick2");
+                    $(".modal-backdrop2").toggleClass("overlay");
 
-                  var isOpen = $(".modal-backdrop").hasClass("overlay");
-                   if (isOpen) { 
-                        $(".modal-backdrop").css("display","block");
-                          
-                          }
-                        else
-                        {
-                             $(".modal-backdrop").css("display","none");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
 
-                        }                
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
                 });
 
 
@@ -493,37 +512,41 @@
                 valEl.text(parseInt(valEl.data('origVal') * progress))
             });
             </script>
-
             <div class="modal-backdrop in" style="display: none;"></div>
-
-
             <audio id="player" src="sound/StartCar.mp3"></audio>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        var playing = true;
-        var audioEl = $('#player')[0]
-        audioEl.play();
-        $('a#button').click(function() {
-            if(playing){
-                playing = false;
-                audioEl.pause();
-                   $(this).removeClass('soundIcnPlay').addClass('soundIcnPause');
-            }else{
-                playing = true;
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var playing = true;
+                var audioEl = $('#player')[0]
                 audioEl.play();
-                $(this).removeClass('soundIcnPause').addClass('soundIcnPlay');
-            }
-    
-        });
+                $('a#button').click(function() {
+                    if (playing) {
+                        playing = false;
+                        audioEl.pause();
+                        $(this).removeClass('soundIcnPlay').addClass('soundIcnPause');
+                    } else {
+                        playing = true;
+                        audioEl.play();
+                        $(this).removeClass('soundIcnPause').addClass('soundIcnPlay');
+                    }
 
-      
-    });
+                });
 
 
-    </script>
+            });
+            </script>
+            <script type="text/javascript">
+            $(document).ready(function() {
 
+                $("a#link1").show(4200);
+                $("a#link2").show(4200);
+                $("a#link3").show(4200);
+                $("a#link4").show(4200);
+                $("a#link5").show(4200);
+                $("a#link6").show(4200);
 
+            });
+            </script>
 </body>
 
 </html>

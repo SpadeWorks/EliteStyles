@@ -2160,6 +2160,7 @@ h1 {
 
 
 
+
 /*custom style starts here --------------------------------------------------------------------*/
 
 
@@ -2317,6 +2318,7 @@ h1 {
 
 
 
+
 /*welcome and landing text ends here*/
 
 
@@ -2456,6 +2458,7 @@ h1 {
 
 
 
+
 /*equiliser ends here*/
 
 
@@ -2468,6 +2471,7 @@ span.counter {
     color: #fff;
     text-transform: uppercase;
 }
+
 
 
 
@@ -2689,6 +2693,7 @@ fieldset[disabled] .btn {
 
 
 
+
 /*wizard style ends here*/
 
 
@@ -2707,6 +2712,7 @@ fieldset[disabled] .btn {
 .inputMaterial:focus {
     outline: none;
 }
+
 
 
 
@@ -2731,6 +2737,7 @@ label {
 
 
 
+
 /* active state */
 
 .inputMaterial:focus~label,
@@ -2749,6 +2756,7 @@ label {
 
 
 
+
 /* BOTTOM BARS ================================= */
 
 .bar:before {
@@ -2762,12 +2770,14 @@ label {
 
 
 
+
 /* active state */
 
 .inputMaterial:focus~.bar:before,
 .inputMaterial:focus~.bar:after {
     width: 50%;
 }
+
 
 
 
@@ -2790,6 +2800,7 @@ label {
 .registration_form {
     margin-top: 130px;
 }
+
 
 
 
@@ -2827,6 +2838,7 @@ label {
 
     border-radius: 10px;
 }
+
 
 
 
@@ -3579,6 +3591,178 @@ span.l_count {
     margin-top: 0px;
 }
 
+.white_circleclick {
+    height: 20px;
+    border-radius: 50px;
+    background: #fff;
+    float: left;
+    display: block;
+    width:
+}
+
+.lc_containerclick {
+    display: block;
+    width: 100px;
+    transition: 0.5s;
+    opacity: 1;
+    height: 100px;
+    border-right: solid 2px #fff;
+    margin-top: -32px;
+    transition: all 0.5s;
+}
+
+.letest_driveboxclick {
+    position: absolute;
+    left: 455px;
+    display: block;
+    transition: 0.5s;
+    width: 450px;
+    opacity: 1;
+    z-index: 111;
+}
+
+
+
+
+
+
+.white_circleclick2 {
+    display: block;
+}
+
+.lc_containerclick2 {
+    display: block;
+    width: 100px;
+    transition: 0.5s;
+    opacity: 1;
+    -webkit-box-direction: reverse;
+    position: absolute;
+    right: 0px;
+    height: 100px;
+    border-left: : solid 2px #fff;
+    margin-top: -32px;
+    transition: all 0.5s;
+}
+
+.letest_driveboxclick2 {
+    position: absolute;
+    right: 440px;
+    display: block;
+    transition: 0.5s;
+    width: 450px;
+    opacity: 1;
+    z-index: 111;
+}
+
+.map_container {
+    width: auto;
+    float: left;
+    margin-left: 127px;
+    margin-top: 42px;
+}
+
+
+
+a#link1 img, a#link2 img,a#link3 img,a#link4 img,a#link5 img,a#link6 img {
+    height: 35px;
+    margin-left: 1;
+    position: absolute;
+    z-index: 10;
+    bottom: -6px;
+}
+
+
+
+a#link1 {
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    display: none;
+    transition: all 0.5s;
+}
+
+a#link2 {
+    position: absolute;
+    top: 22%;
+    left: 74%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+a#link3 {
+    position: absolute;
+    top: 61%;
+    left: 79%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    z-index: 110;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+
+a#link4 {
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    z-index: 110;
+    display: none;
+    transition: all 0.5s;
+}
+
+a#link5 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    z-index: 110;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+
+a#link6 {
+    position: absolute;
+    top: 22%;
+    left: 17%;
+    color: red;
+    font-family: titanium;
+    text-decoration: none;
+    z-index: 110;
+    display: none;
+    transition: all 0.5s;
+}
+
+
+
+a#link1 span,a#link2 span,a#link3 span,a#link4 span,a#link5 span,a#link6 span {
+    background: #191919;
+    padding: 6px;
+    /* position: absolute; */
+    z-index: 2;
+    font-size: 14px;
+    margin-left: 19px;
+    padding-left: 25px;
+    padding-right: 18px;
+    text-transform: uppercase;
+}
+
+
 
 
 
@@ -3674,68 +3858,5 @@ span.testd_count {
 
 
 
+
 /*profile css ends here*/
-
-.white_circleclick {
-    height: 20px;
-    border-radius: 50px;
-    background: #fff;
-    float: left;
-    display: block;
-    width:
-}
-
-.lc_containerclick {
-    display: block;
-    width: 100px;
-    transition: 0.5s;
-    opacity: 1;
-    height: 100px;
-    border-right: solid 2px #fff;
-    margin-top: -32px;
-    transition: all 0.5s;
-}
-
-.letest_driveboxclick {
-    position: absolute;
-    left: 455px;
-    display: block;
-    transition: 0.5s;
-    width: 450px;
-    opacity: 1;
-}
-
-
-
-
-
-
-.white_circleclick2 {
-  display: block;
-}
-
-.lc_containerclick2 {
-    display: block;
-    width: 100px;
-    transition: 0.5s;
-    opacity: 1;
-    -webkit-box-direction: reverse;
-    position: absolute;
-    right: 0px;
-    height: 100px;
-    border-left: : solid 2px #fff;
-    margin-top: -32px;
-    transition: all 0.5s;
-}
-
-.letest_driveboxclick2 {
-    position: absolute;
-    right: 440px;
-    display: block;
-    transition: 0.5s;
-    width: 450px;
-    opacity: 1;
-}
-
-
-
