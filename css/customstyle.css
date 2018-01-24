@@ -16,6 +16,23 @@
 }
 
 
+body.starts{font: 1em "HemiHeadRg-BoldItalic", Monospace;
+    color: #fff;
+    height: 100vh;
+    -webkit-transform: opacity 0.3s linear;
+    transform: opacity 0.3s linear;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/bg-stars.gif);
+    width: 100%;
+    height: auto;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-size: cover; */
+    left: 0px;
+    top: 0px;
+    background-attachment: fixed;
+    overflow-x: hidden;}
+    
+
 
 body.dash_back {
     font: 1em "HemiHeadRg-BoldItalic", Monospace;
@@ -2178,6 +2195,22 @@ h1 {
     color: red;
 }
 
+.hud-box button.button.type1 {
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.hud-box .btn-group{
+
+    width: 100%;
+    display: inline-flex;
+    position: absolute;
+    left: 100px;
+    top: 376px;
+}
+
+
+
 .button.type1 {
     color: #f4313f;
 }
@@ -2187,8 +2220,8 @@ h1 {
     content: "";
     display: block;
     position: absolute;
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: 30%;
     border: 2px solid;
     transition: all 0.6s ease;
     border-radius: 2px;
@@ -2218,13 +2251,7 @@ h1 {
     height: 100%;
 }
 
-.btn-group {
-    width: 100%;
-    display: inline-flex;
-    position: absolute;
-    left: 246px;
-    top: 376px;
-}
+s
 
 .header-title .title:after {
     content: '';
@@ -3476,6 +3503,7 @@ span.l_count {
     transition: all 0.5s;
 }
 
+
 .white_circle {
     float: left;
     height: 10px;
@@ -3492,6 +3520,7 @@ span.l_count {
 .black_box_right {
     background: #ffffff0a;
     margin-top: -100px;
+    z-index: 99;
 }
 
 .lc_container2 {
@@ -3622,10 +3651,37 @@ span.l_count {
 }
 
 
+.letest_driveboxclick2 {
+    position: absolute;
+    left: 455px;
+    display: block;
+    transition: 0.5s;
+    width: 450px;
+    opacity: 1;
+    z-index: 111;
+}
+
+
+.letest_driveboxclick3 {
+    position: absolute;
+    left: 455px;
+    display: block;
+    transition: 0.5s;
+    width: 450px;
+    opacity: 1;
+    z-index: 111;
+}
 
 
 
 
+
+
+
+
+
+
+/*
 .white_circleclick2 {
     display: block;
 }
@@ -3652,7 +3708,7 @@ span.l_count {
     width: 450px;
     opacity: 1;
     z-index: 111;
-}
+}*/
 
 .map_container {
     width: auto;
@@ -3703,7 +3759,7 @@ a#link3 {
     color: red;
     font-family: titanium;
     text-decoration: none;
-    z-index: 110;
+    z-index: 100;
     display: none;
     transition: all 0.5s;
 }
@@ -3717,7 +3773,7 @@ a#link4 {
     color: red;
     font-family: titanium;
     text-decoration: none;
-    z-index: 110;
+    z-index: 100;
     display: none;
     transition: all 0.5s;
 }
@@ -3821,6 +3877,12 @@ span.testd_count {
 }
 
 
+.count_box span.gray_count{  font-size: 15px;
+    color: #828282;
+    margin-left: 5px;
+    font-family: titanium !important;
+text-transform: uppercase;}
+
 .count_box ul.select2-selection__rendered {
     float: left;
     padding-bottom: 30px;
@@ -3841,6 +3903,7 @@ span.testd_count {
 
 .profile_box .nav>li>a {
     font-size: 14px;
+        text-transform: uppercase;
 }
 
 .col-md-10.profile_box .count_box:nth-child(4) {
@@ -3852,11 +3915,73 @@ span.testd_count {
     padding: 10px;
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-
 /*profile css ends here*/
+
+
+/*laderboard list styles starts here*/
+
+
+.leader_listbox .leader_name {
+    height: 50px;
+    background: none;
+    float: left;
+    width: 94%;
+    border: solid 1px #fff;
+    transform: skewX(-21deg);
+    height: 74px;
+    background: none;
+    border: solid 1px #fff;
+    background: #0000008a;
+}
+.leader_listbox .leader_rank {
+    width: 4%;
+    float: left;
+    height: 43px;
+    background: #ed1b24;
+    transform: skewX(-20deg);
+    position: relative;
+    left: 10px;
+    z-index: 99;
+}
+
+.leader_namenphoto,.leader_car {
+    float: left;
+    -webkit-transform: skewX(27deg) !important;
+    color: white;
+    box-sizing: border-box;
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    /* transform: skewX(45deg); */
+    left: 0px;
+    /* padding-left: 13px; */
+    padding-top: 5px;
+
+
+}
+
+.leader_namenphoto img{float: left;
+}
+ 
+ .point_box,.drive_status{height: 40px; float: left;}
+.point_box span.orange {
+    font-size: 34px;
+    padding-top: 2px;
+    padding-left: 9px;
+}
+
+.leader_name span{ -webkit-transform: skewX(25deg) !important;
+    position: absolute;
+    box-sizing: border-box;
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -webkit-transform: skewX(45deg);
+    /* transform: skewX(45deg); */
+    left: 0;
+    font-size: 23px;
+    padding-left: 19px;
+}
+
+.leadership_box{margin-top: 100px;}
+
+/*leaderboard list styles ends here*/

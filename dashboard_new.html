@@ -154,9 +154,9 @@
                                 <div id="myTabContent" class="tab-content">
                                     <div class="tab-pane active in" id="home">
                                         <div class="col-md-12">
-                                            <div class="row test_drive">
+                                            <div class="row test_drive driveno1">
                                                 <div class="col-md-10">
-                                                    <a class="drive_name"><h4>Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a class="drive_name"><h4 class="test_one">Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
@@ -167,28 +167,38 @@
                                                         <div class="col-md-12" style="height:50px;"></div>
                                                     </div>
                                                 </div>
+                                                    <div class="letest_drivebox"></div>
                                             </div>
-                                            <div class="row test_drive">
+                                            <div class="row test_drive driveno2">
                                                 <div class="col-md-10">
-                                                    <h4>Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4>
+                                                    <h4 class="test_two">Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
                                                 <div class="col-md-2 pull-right">
-                                                    <div class="white_circle" style="display: none;"></div>
-                                                    <div class="white_line" style="width: 10px;"></div>
+                                                    <div class="lc_container">
+                                                        <div class="white_circle"></div>
+                                                        <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
+                                                        <div class="col-md-12" style="height:50px;"></div>
+                                                    </div>
                                                 </div>
+
+                                                    <div class="letest_drivebox"></div>
                                             </div>
-                                            <div class="row test_drive">
+                                            <div class="row test_drive driveno3">
                                                 <div class="col-md-10">
-                                                    <h4>Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4>
+                                                    <h4 class="test_three">Skype for Bussiness <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
                                                 <div class="col-md-2 pull-right">
-                                                    <!--  <div class="white_circle" style="display: none;"></div> -->
-                                                    <div class="white_line" style="width: 10px;"></div>
+                                                   <div class="lc_container">
+                                                        <div class="white_circle"></div>
+                                                        <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
+                                                        <div class="col-md-12" style="height:50px;"></div>
+                                                    </div>
                                                 </div>
+                                                    <div class="letest_drivebox"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="letest_drivebox"></div>
+                    
                     </div>
                     <div class="col-md-4">
                         <h2 class="text-center" style="position: absolute;top: 130px; font-size: 35px;">Skills.Speed.Smarts. Brind it all.</h2>
@@ -216,9 +226,7 @@
                                             <div class="row test_drive">
                                                 <div class="col-md-2">
                                                     <div class="lc_container2">
-                                                        <div class="white_circle2" style="
-   
-"></div>
+                                                        <div class="white_circle2"></div>
                                                         <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
                                                         <div class="col-md-12" style="height:50px;"></div>
                                                     </div>
@@ -253,7 +261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="letest_drivebox2"></div>
+                
                     </div>
                     <div class="col-md-12" style=" margin-top: 50px;">
                         <div class="col-md-2">
@@ -346,28 +354,80 @@
 
                 $(".modal-backdrop").css("display", "none");
 
-                // test drive details popup starts here
+              
 
-                $(".black_box h4").click(function() {
-
-
+                $(".black_box h4.test_one").click(function() {
 
 
-                    $(".white_circle1").toggleClass("white_circleclick");
-                    $(".lc_container").toggleClass("lc_containerclick");
-                    $(".letest_drivebox").toggleClass("letest_driveboxclick");
+
+                    $(".driveno1 .letest_drivebox").addClass("box");
                     $(".modal-backdrop").toggleClass("overlay");
                     var isOpen = $(".modal-backdrop").hasClass("overlay");
                     if (isOpen) {
                         $(".modal-backdrop").css("display", "block");
-
                     } else {
                         $(".modal-backdrop").css("display", "none");
 
                     }
+                    
+                     var isBox = $(".driveno1 .letest_drivebox").hasClass("box");
+
+                    if(isBox){
+                        $(".white_circle1").toggleClass("white_circleclick");
+                        $(".lc_container").toggleClass("lc_containerclick");
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+
+                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
+                         $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
 
 
-                });
+
+                        }
+
+
+                        
+                   
+                        });
+
+
+
+
+                $(".black_box h4.test_two").click(function() {
+
+
+
+                    $(".driveno2 .letest_drivebox").addClass("box");
+                    $(".modal-backdrop").toggleClass("overlay");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
+                    
+                     var isBox = $(".driveno2 .letest_drivebox").hasClass("box");
+
+                    if(isBox){
+                        $(".white_circle1").toggleClass("white_circleclick");
+                        $(".lc_container").toggleClass("lc_containerclick");
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+
+                         $(".driveno1 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                         $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
+
+
+
+                        }
+
+
+                        
+                   
+                        });
 
 
 
@@ -375,12 +435,56 @@
 
 
 
+                $(".black_box h4.test_three").click(function() {
+
+
+
+                    $(".driveno3 .letest_drivebox").addClass("box");
+                    $(".modal-backdrop").toggleClass("overlay");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
+                    
+                     var isBox = $(".driveno3 .letest_drivebox").hasClass("box");
+
+                    if(isBox){
+                        $(".white_circle1").toggleClass("white_circleclick");
+                        $(".lc_container").toggleClass("lc_containerclick");
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+
+                         $(".driveno1 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
+
+
+
+                        }
+
+
+                        
+                   
+                        });
 
 
 
 
+                    $(".modal-backdrop").click(function(){
+                        $(".modal-backdrop").removeClass("modal-backdrop");
+                        $(".driveno1 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
+                          $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
 
-                $(".black_box_right h4").click(function detail_info() {
+                    });
+
+                 /*$(".black_box_right h4").click(function detail_info() {
                     $(".white_circle1").removeClass("white_circleclick");
                     $(".lc_container").removeClass("lc_containerclick");
                     $(".letest_drivebox").removeClass("letest_driveboxclick");
@@ -399,13 +503,12 @@
 
                     }
                 });
+*/
 
 
 
 
 
-
-                //test drive deails popup ends here
 
 
 
