@@ -3111,7 +3111,7 @@ span.select2-selection__choice__remove {
 
 
 .letest_drivebox {
-    height: 500px;
+    min-height: 500px;
     background: #060612;
     position: absolute;
     bottom: 0%;
@@ -3124,7 +3124,7 @@ span.select2-selection__choice__remove {
 
 
 .letest_drivebox2 {
-    height: 500px;
+    min-height: 500px;
     background: #060612;
     position: absolute;
     top: -140px;
@@ -3571,13 +3571,14 @@ span.l_count {
     opacity: 00;
     z-index: 102;
     transition: all 0.9s;
-    height: 500px;
+    min-height: 500px;
     background: #060612;
     position: absolute;
     bottom: 0%;
     width: 400px;
     z-index: 102;
     border: solid 1px#fff;
+    bottom: -100px;
 }
 
 @-webkit-keyframes rotation {
@@ -3648,6 +3649,7 @@ span.l_count {
     width: 450px;
     opacity: 1;
     z-index: 111;
+    bottom: -100px;
 }
 
 
@@ -3670,6 +3672,7 @@ span.l_count {
     width: 450px;
     opacity: 1;
     z-index: 111;
+
 }
 
 
@@ -4114,5 +4117,96 @@ ul.task_circle li img{float: right;
 ul.task_circle li p.inactive_task{color: #333;}
 
 
-
 /*test case for user ends here*/
+
+
+
+
+
+
+/*test case popup starts here*/
+.social_box a:first-child{margin-left: 0px;}
+.social_box a{float: left;margin-left: 40px;}
+span.teams{background: url(../images/teams1.png) no-repeat; height: 23px; width: 23px; float:left;}
+span.teams:hover{background: url(../images/teams2.png) no-repeat;height: 23px; width: 23px;float:left;}
+.social_box a i {
+    color: #828282;
+}
+
+.social_box{margin-top: 20px;}
+.social_box a i:hover{color:#5659b0;}
+
+
+.popup_infocontainer {
+    float: left;
+    margin-top: 30px;
+    padding-top: 11px;
+}
+
+.earned_pointbox {
+    /* background: #333; */
+    border-right: solid 1px #333333;
+    min-height: 250px;
+}
+
+
+.earn_box{min-height: 250px; border-bottom: solid 1px #333;padding-top: 20px;}
+
+.drive_completionbox{min-height: 250px; padding-top: 20px;}
+
+
+.col-md-12.earn_box #canvas2, .drive_completionbox #canvas3 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+.earn_box h3, .drive_completionbox h3 {
+    margin-top: 10px;
+    position: absolute;
+    top: 110px;
+    left: 58px;
+    text-transform: uppercase !important;
+}
+.earn_box span.small,.drive_completionbox span.small {
+    position: absolute;
+    bottom: 12px;
+    left: 48px;
+    font-family: titanium;
+    font-size: 11px;
+
+}
+
+.popup_ownerbox, .popup_dificultybox{min-height: 250px; padding-top: 20px;}
+
+
+.popup_ownerbox h4{font-family: titanium !important; text-transform: uppercase !important;}
+
+.col-md-12.end_date {
+    position: absolute;
+    bottom: 50px;
+    height: 50px; 
+}
+
+.popup_infocontainer button{margin-left: 100px;}
+
+.popup_buttonbox {margin-top: 20px;}
+
+
+/*test case popup ends here*/
+
+
+
+
+/*video box styles starts here*/
+.modal-dialog.video_box {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.modal-dialog{width: 800px;}
+
+
+
+
+/*video box styling ends here*/

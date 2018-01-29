@@ -20,7 +20,9 @@
     <!-- material fonts starts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- material fonts ends-->
-    <style type="text/css"> </style>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body class="dash_back">
@@ -36,25 +38,35 @@
                             <object>
                                 <embed src="images/track.svg">
                                 <a href="#" id="link1" class="maplinks"><img src="images/testdrivecenter.png" /><span>test drieves central</span></a>
-
-                                 <a href="#" id="link2" class="maplinks"><img src="images/refer.png" /><span>Refer a friend</span></a>
-
-
-                                 <a href="#" id="link3" class="maplinks"><img src="images/refer.png" /><span>My Profile</span></a>
-
-                                    <a href="#" id="link4" class="maplinks"><img src="images/Prizes.png" /><span>Prizes</span></a>
-
-                                    <a href="#" id="link5" class="maplinks"><img src="images/leaderboard.png" /><span>Leaderboard</span></a>
-
-                                    <a href="#" id="link6" class="maplinks"><img src="images/video.png" /><span>Video</span></a>
-
-                              
-
-
+                                <a href="#" id="link2" class="maplinks"><img src="images/refer.png" /><span>Refer a friend</span></a>
+                                <a href="#" id="link3" class="maplinks"><img src="images/refer.png" /><span>My Profile</span></a>
+                                <a href="#" id="link4" class="maplinks"><img src="images/Prizes.png" /><span>Prizes</span></a>
+                                <a href="#" id="link5" class="maplinks"><img src="images/leaderboard.png" /><span>Leaderboard</span></a>
+                                <a data-toggle="modal" data-target="#exampleModal" id="link6" class="maplinks"><img src="images/video.png" /><span>Video</span></a>
                                 </embed>
                             </object>
                         </div>
                     </div>
+
+
+                    <!-- video box starts here-->
+
+                    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog video_box" role="document">
+    <div class="modal-content">
+    <video width="100%" controls>
+  <source src="images/elite_video.mp4" type="video/mp4">
+  <source src="images/elite_video.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+    
+    </div>
+  </div>
+</div>
+
+
+                    <!-- video box ends here -->
                     <div class="col-md-4" style="height: 360px;">
                         <div class="col-md-12">
                             <div class="row">
@@ -167,7 +179,103 @@
                                                         <div class="col-md-12" style="height:50px;"></div>
                                                     </div>
                                                 </div>
-                                                    <div class="letest_drivebox"></div>
+                                                <div class="letest_drivebox">
+                                                    <div class="col-md-12">
+                                                        <h3>Skype for Bussiness</h3>
+                                                        <div class="col-md-12 social_box">
+                                                            <div class="row">
+                                                                <a href="#"><i class="material-icons">info</i></a>
+                                                                <a href="#"><i class="material-icons">email</i></a>
+                                                                <a href="#"><span class="teams"></span></a>
+                                                                <a href="#"><i class="material-icons">share</i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 popup_infocontainer">
+                                                            <div class="row">
+                                                                <div class="col-md-6 earned_pointbox">
+                                                                   
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 earn_box">
+                                                                         <span class="orange"><i>POINTS :</i></span>
+                                                                                         <canvas id="canvas2" width="150" height="150"></canvas> 
+
+                                                                                          <h3>80 %</h3>
+                                                                                          <span class="small">7 of 8 tasks done</span>
+
+
+                                                                                
+
+
+                                                                        </div>
+                                                                        <div class="col-md-12 drive_completionbox">
+                                                                        <span class="orange"><i>DRIVE COMPLETION</i></span>
+                                                                             <canvas id="canvas3" width="150" height="150"></canvas> 
+
+                                                                                          <h3>400</h3>
+                                                                                          <span class="small">400 of 500 points earned</span>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 drive_info">
+                                                                    <div class="row">
+                                                                        
+                                                                        <div class="col-md-12 popup_dificultybox">
+                                                                           <div class="row">
+                                                                                <div class="col-md-12 owner">
+                                                                                    <span class="orange">
+                                                                                        <i>DRIVE OWNER</i>
+                                                                                    </span>
+                                                                                    <h4>Kenny Morphase</h4>
+                                                                                </div>
+                                                                                <div class="col-md-12 end_date">
+                                                                                    <span class="orange">
+                                                                                        <i>End Date</i>
+                                                                                    </span>
+                                                                                    <h4>Mar 13, 2018</h4>
+
+                                                                                </div>
+                                                                            </div>  
+
+                                                                        </div>
+
+
+                                                                        <div class="col-md-12 popup_ownerbox">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 owner">
+                                                                                    <span class="orange">
+                                                                                        <i>PARTICIPANTS</i>
+                                                                                    </span>
+                                                                                    <h4>800</h4>
+                                                                                </div>
+                                                                                <div class="col-md-12 end_date">
+                                                                                    <span class="orange">
+                                                                                        <i>DEFICULTY LEVEL</i>
+                                                                                    </span>
+                                                                                    <h4>Street Race</h4>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12 popup_buttonbox">
+                                                            
+          <button class="button type1">
+                       Drive Through
+                      </button>
+                     
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="row test_drive driveno2">
                                                 <div class="col-md-10">
@@ -182,8 +290,7 @@
                                                         <div class="col-md-12" style="height:50px;"></div>
                                                     </div>
                                                 </div>
-
-                                                    <div class="letest_drivebox"></div>
+                                                <div class="letest_drivebox"></div>
                                             </div>
                                             <div class="row test_drive driveno3">
                                                 <div class="col-md-10">
@@ -192,13 +299,13 @@
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
                                                 <div class="col-md-2 pull-right">
-                                                   <div class="lc_container">
+                                                    <div class="lc_container">
                                                         <div class="white_circle"></div>
                                                         <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
                                                         <div class="col-md-12" style="height:50px;"></div>
                                                     </div>
                                                 </div>
-                                                    <div class="letest_drivebox"></div>
+                                                <div class="letest_drivebox"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -208,7 +315,6 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
                     <div class="col-md-4">
                         <h2 class="text-center" style="position: absolute;top: 130px; font-size: 35px;">Skills.Speed.Smarts. Brind it all.</h2>
@@ -261,7 +367,6 @@
                                 </div>
                             </div>
                         </div>
-                
                     </div>
                     <div class="col-md-12" style=" margin-top: 50px;">
                         <div class="col-md-2">
@@ -319,8 +424,11 @@
                                 <h4>TOTAL TASKS</h4>
                                 <div class="number">
                                     <canvas id="canvas" width="100" height="100"></canvas>
+                      
                                     <h3>1200</h3>
                                 </div>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -354,7 +462,7 @@
 
                 $(".modal-backdrop").css("display", "none");
 
-              
+
 
                 $(".black_box h4.test_one").click(function() {
 
@@ -369,27 +477,27 @@
                         $(".modal-backdrop").css("display", "none");
 
                     }
-                    
-                     var isBox = $(".driveno1 .letest_drivebox").hasClass("box");
 
-                    if(isBox){
+                    var isBox = $(".driveno1 .letest_drivebox").hasClass("box");
+
+                    if (isBox) {
                         $(".white_circle1").toggleClass("white_circleclick");
                         $(".lc_container").toggleClass("lc_containerclick");
-                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");
 
-                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
-                         $(".driveno3 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
-
-
-
-                        }
+                        $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                        $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
+                        $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                        $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
 
 
-                        
-                   
-                        });
+
+                    }
+
+
+
+
+                });
 
 
 
@@ -407,27 +515,27 @@
                         $(".modal-backdrop").css("display", "none");
 
                     }
-                    
-                     var isBox = $(".driveno2 .letest_drivebox").hasClass("box");
 
-                    if(isBox){
+                    var isBox = $(".driveno2 .letest_drivebox").hasClass("box");
+
+                    if (isBox) {
                         $(".white_circle1").toggleClass("white_circleclick");
                         $(".lc_container").toggleClass("lc_containerclick");
-                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");
 
-                         $(".driveno1 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
-                         $(".driveno3 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
-
-
-
-                        }
+                        $(".driveno1 .lc_container").removeClass("lc_containerclick");
+                        $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                        $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                        $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
 
 
-                        
-                   
-                        });
+
+                    }
+
+
+
+
+                });
 
 
 
@@ -448,43 +556,43 @@
                         $(".modal-backdrop").css("display", "none");
 
                     }
-                    
-                     var isBox = $(".driveno3 .letest_drivebox").hasClass("box");
 
-                    if(isBox){
+                    var isBox = $(".driveno3 .letest_drivebox").hasClass("box");
+
+                    if (isBox) {
                         $(".white_circle1").toggleClass("white_circleclick");
                         $(".lc_container").toggleClass("lc_containerclick");
-                        $(".letest_drivebox").toggleClass("letest_driveboxclick");  
+                        $(".letest_drivebox").toggleClass("letest_driveboxclick");
 
-                         $(".driveno1 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
-                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
-
-
-
-                        }
-
-
-                        
-                   
-                        });
-
-
-
-
-                    $(".modal-backdrop").click(function(){
-                        $(".modal-backdrop").removeClass("modal-backdrop");
                         $(".driveno1 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
-                         $(".driveno2 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
-                          $(".driveno3 .lc_container").removeClass("lc_containerclick");
-                         $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
+                        $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                        $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                        $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
 
-                    });
 
-                 /*$(".black_box_right h4").click(function detail_info() {
+
+                    }
+
+
+
+
+                });
+
+
+
+
+                $(".modal-backdrop").click(function() {
+                    $(".modal-backdrop").removeClass("modal-backdrop");
+                    $(".driveno1 .lc_container").removeClass("lc_containerclick");
+                    $(".driveno1 .letest_drivebox").removeClass("letest_driveboxclick");
+                    $(".driveno2 .lc_container").removeClass("lc_containerclick");
+                    $(".driveno2 .letest_drivebox").removeClass("letest_driveboxclick");
+                    $(".driveno3 .lc_container").removeClass("lc_containerclick");
+                    $(".driveno3 .letest_drivebox").removeClass("letest_driveboxclick");
+
+                });
+
+                /*$(".black_box_right h4").click(function detail_info() {
                     $(".white_circle1").removeClass("white_circleclick");
                     $(".lc_container").removeClass("lc_containerclick");
                     $(".letest_drivebox").removeClass("letest_driveboxclick");
@@ -527,9 +635,12 @@
                 });
             });
             </script>
+
+
+
             <!-- circular progress bar starts here -->
             <script type="text/javascript">
-            var options = {
+     /*       var options = {
                 value: 0.75,
                 size: 60,
                 startAngle: -Math.PI,
@@ -612,7 +723,127 @@
             $(canvas).on('circle-animation-progress', function(e, progress) {
                 valEl.text(parseInt(valEl.data('origVal') * progress))
             });
+*/
+            loadProgressBar("", 0.75, 60);
+            loadProgressBar(parseInt(2), 0.75, 140);
+            loadProgressBar(parseInt(3), 0.75, 140);
+
+            // Prepare canvas
+            function loadProgressBar(val, optionsVal, optionsSize)
+            {
+            window["options" + val] = {
+                value: optionsVal,
+                size: optionsSize,
+                startAngle: -Math.PI,
+                startColor: 'red',
+                endColor: 'red',
+                animation: {
+                    duration: 1200,
+                    easing: 'circleProgressEase'
+                }
+            };
+
+            $.easing.circleProgressEase = function(x, t, b, c, d) {
+                if ((t /= d / 2) < 1)
+                    return c / 2 * t * t * t + b;
+                return c / 2 * ((t -= 2) * t * t + 2) + b;
+            };
+
+                window["s" + val] = window["options" + val].size, // square size
+                window["v" + val] = window["options" + val].value, // current value: from 0.0 to 1.0
+                window["r" + val] = window["s" + val] / 2, // radius
+                window["t" + val] = window["s" + val] / 14; // thickness
+
+                window["canvas" + val]=$('#canvas'+val)[0];                                           
+            window["canvas" + val].width = window["s" + val];
+            window["canvas" + val].height = window["s" + val];
+            window["ctx" + val] = window["canvas" + val].getContext('2d');
+            window["lg" + val] = window["ctx" + val].createLinearGradient(0, 0, window["s" + val], 0);
+            window["lg" + val].addColorStop(0, window["options" + val].startColor);
+            window["lg" + val].addColorStop(1, window["options" + val].endColor);
+            window["ctx" + val].fillStyle = "rgba(0, 0, 0, .1)";
+
+            // Draw circle
+            if (window["options" + val].animation)
+                _drawAnimated(window["v" + val]);
+            else
+                _draw(window["v" + val]);
+
+
+            function _draw(p) {
+                // Clear frame
+                window["ctx" + val].clearRect(0, 0, window["s" + val], window["s" + val]);
+
+                // Draw background circle
+                window["ctx" + val].beginPath();
+                window["ctx" + val].arc(window["r" + val], window["r" + val], window["r" + val], -Math.PI, Math.PI);
+                window["ctx" + val].arc(window["r" + val], window["r" + val], window["r" + val] - window["t" + val], Math.PI, -Math.PI, true);
+                window["ctx" + val].closePath();
+                window["ctx" + val].fill(); // gray fill
+
+                // Draw progress arc
+                window["ctx" + val].beginPath();
+                window["ctx" + val].arc(window["r" + val], window["r" + val], window["r" + val], -Math.PI, -Math.PI + Math.PI * 2 * p);
+                window["ctx" + val].arc(window["r" + val], window["r" + val], window["r" + val] - window["t" + val], -Math.PI + Math.PI * 2 * p, -Math.PI, true);
+                window["ctx" + val].closePath();
+                window["ctx" + val].save();
+                window["ctx" + val].clip();
+                window["ctx" + val].fillStyle = window["lg" + val];
+                window["ctx" + val].fillRect(0, 0, window["s" + val], window["s" + val]); // gradient fill
+                window["ctx" + val].restore();
+            }
+
+            function _drawAnimated(v) {
+                $(window["canvas" + val]).stop(true, true).css({ value: 0 }).animate({ value: window["v" + val] }, $.extend({}, options.animation, {
+                    step: function(p) {
+                        _draw(p);
+                        $(window["canvas" + val]).trigger('circle-animation-progress', [p / window["v" + val], p]);
+                    },
+
+                    complete: function() {
+                        $(window["canvas" + val]).trigger('circle-animation-end');
+                    }
+                }));
+            }
+
+            // now let's animate numbers
+            window["valE" + val] = $('.value');
+            window["valE" + val].data('origVal', window["valE" + val].text());
+            $(window["canvas" + val]).on('circle-animation-progress', function(e, progress) {
+                window["valE" + val].text(parseInt(window["valE" + val].data('origVal') * progress))
+            });
+            }
+
+
+
+
+
+
             </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
             <div class="modal-backdrop in" style="display: none;"></div>
             <audio id="player" src="sound/StartCar.mp3"></audio>
             <script type="text/javascript">
