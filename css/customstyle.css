@@ -3010,9 +3010,8 @@ input.select2-search__field {
 
 li.select2-selection__choice {
     position: relative;
-    top: 20px;
+    top: 0px;
     background: #41404e;
-    width: 15% !important;
     padding-left: 14px;
     border-radius: 50px;
     float: left;
@@ -3022,6 +3021,8 @@ li.select2-selection__choice {
     font-size: 15px;
     padding-bottom: 4px;
     margin-left: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 ul.select2-results__options {
@@ -3653,27 +3654,6 @@ span.l_count {
 }
 
 
-.letest_driveboxclick2 {
-    position: absolute;
-    left: 455px;
-    display: block;
-    transition: 0.5s;
-    width: 450px;
-    opacity: 1;
-    z-index: 111;
-}
-
-
-.letest_driveboxclick3 {
-    position: absolute;
-    left: 455px;
-    display: block;
-    transition: 0.5s;
-    width: 450px;
-    opacity: 1;
-    z-index: 111;
-
-}
 
 
 
@@ -3682,36 +3662,6 @@ span.l_count {
 
 
 
-
-
-/*
-.white_circleclick2 {
-    display: block;
-}
-
-.lc_containerclick2 {
-    display: block;
-    width: 100px;
-    transition: 0.5s;
-    opacity: 1;
-    -webkit-box-direction: reverse;
-    position: absolute;
-    right: 0px;
-    height: 100px;
-    border-left: : solid 2px #fff;
-    margin-top: -32px;
-    transition: all 0.5s;
-}
-
-.letest_driveboxclick2 {
-    position: absolute;
-    right: 440px;
-    display: block;
-    transition: 0.5s;
-    width: 450px;
-    opacity: 1;
-    z-index: 111;
-}*/
 
 .map_container {
     width: auto;
@@ -3820,6 +3770,55 @@ a#link1 span,a#link2 span,a#link3 span,a#link4 span,a#link5 span,a#link6 span {
     padding-right: 18px;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+.white_circleclick2 {
+    display: block;
+}
+
+.lc_containerclick2 {
+    display: block;
+    width: 100px;
+    transition: 0.5s;
+    opacity: 1;
+    -webkit-box-direction: reverse;
+    position: absolute;
+    right: 0px;
+    height: 100px;
+    border-left: : solid 2px #fff;
+    margin-top: -32px;
+    transition: all 0.5s;
+    z-index: 9999
+}
+
+.letest_driveboxclick2 {
+    position: absolute;
+    right: 440px;
+    display: block;
+    transition: 0.5s;
+    width: 450px;
+    opacity: 1;
+    z-index: 9999;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    background-color: #000;
+}
+
+
+
 
 
 
@@ -4210,3 +4209,76 @@ span.teams:hover{background: url(../images/teams2.png) no-repeat;height: 23px; w
 
 
 /*video box styling ends here*/
+
+
+/*new profile ui starts here*/
+.profile_box img{float: left; margin-right: 40px;}
+
+.profile_box h2{font-size: 30px;}
+
+.profileinfo_box{margin-top:30px; }
+
+.profileinfo_box span.orange{text-transform: uppercase;}
+.profileinfo_box h5{margin-top: 0px; font-family: titanium !important;  font-size: 14px;}
+.inforow{margin-bottom: 20px;}
+.device_box{margin-top: 30px;}
+
+.device_box span{text-transform: uppercase;}
+
+.devicelist{margin-bottom: 50px;}
+
+a.edit_profile{color: #333; margin-top: 10px;}
+
+.edit_profile {
+    margin-top: 20px;
+}
+
+.edit_profile a{color: #fff;}
+
+.profile_overviewbox .overview{background: none; border-bottom: solid 1px #333;}
+.profile_overviewbox img{height: 40px;}
+.profile_overviewbox h4.testcase_title{font-size: 16px;}
+
+
+
+
+/*for car slider start*/
+#carousel-example-generic {
+  display: inline-block;
+}
+/*****************************/
+
+/* Plugin styles */
+ul.thumbnails-carousel {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.thumbnails-carousel .center {
+    display: inline-block;
+}
+ul.thumbnails-carousel li {
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+.controls-background-reset {
+    background: none !important;
+}
+.active-thumbnail {
+    opacity: 0.4;
+}
+.indicators-fix {
+    bottom: 70px;
+}
+
+.profile_overviewbox span.testd_count {
+    background: none;
+    color: #ff8d00;
+    font-size: 38px;
+    padding-right: 0px;
+}
+.profile_overviewbox
+/*for car slider ends*/
+/*new profile ui ends here */

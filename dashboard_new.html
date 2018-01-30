@@ -329,7 +329,7 @@
                                 <div id="myTabContent" class="tab-content">
                                     <div class="tab-pane active in" id="up_drives">
                                         <div class="col-md-12">
-                                            <div class="row test_drive">
+                                            <div class="row test_drive right_firstdrive">
                                                 <div class="col-md-2">
                                                     <div class="lc_container2">
                                                         <div class="white_circle2"></div>
@@ -338,27 +338,60 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-10 text-right">
-                                                    <a class="drive_name"><h4>Wit.ai <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a class="drive_name"><h4 class="rightdriveno1">Wit.ai <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
+
+                                                <div class="letest_drivebox2">
+                                                    
+                                                </div>
                                             </div>
-                                            <div class="row test_drive">
-                                                <div class="col-md-2"> </div>
+                                            <div class="row test_drive right_seconddrive">
+                                                 <div class="col-md-2">
+                                                    <div class="lc_container2">
+                                                        <div class="white_circle2"></div>
+                                                        <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
+                                                        <div class="col-md-12" style="height:50px;"></div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-10 text-right">
-                                                    <a data-toggle="modal" data-target=".letest_drivebox" class="drive_name"><h4>IBM Watson <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a data-toggle="modal" data-target=".letest_drivebox" class="drive_name"><h4 class="rightdriveno2">IBM Watson <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
+                                                 <div class="letest_drivebox2">
+                                                    
+                                                </div>
+
                                             </div>
-                                            <div class="row test_drive">
-                                                <div class="col-md-2"> </div>
+
+
+
+                                            <div class="row test_drive right_thirddrive">
+                                                 <div class="col-md-2">
+                                                    <div class="lc_container2">
+                                                        <div class="white_circle2"></div>
+                                                        <div class="col-md-12" style="height:50px;border-bottom: solid 2px #fff;"></div>
+                                                        <div class="col-md-12" style="height:50px;"></div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-10 text-right">
-                                                    <a data-toggle="modal" data-target=".letest_drivebox" class="drive_name"><h4>IBM Watson <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
+                                                    <a data-toggle="modal" data-target=".letest_drivebox" class="drive_name"><h4 class="rightdriveno3">IBM Watson <span class="glyphicon glyphicon-triangle-right hidden" aria-hidden="true"></span></h4></a>
                                                     <p><span class="end_date">END DATE :</span> MAR 13, 2018</p>
                                                     <p><span class="participants">PARTICIPANTS :</span> 800</p>
                                                 </div>
+                                                 <div class="letest_drivebox2">
+                                                    
+                                                </div>
+
                                             </div>
+
+
+
+
+
+                                            
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="active_drives">
@@ -592,27 +625,146 @@
 
                 });
 
-                /*$(".black_box_right h4").click(function detail_info() {
-                    $(".white_circle1").removeClass("white_circleclick");
-                    $(".lc_container").removeClass("lc_containerclick");
-                    $(".letest_drivebox").removeClass("letest_driveboxclick");
 
-                    $(".white_circle2").toggleClass("white_circleclick2");
-                    $(".lc_container2").toggleClass("lc_containerclick2");
-                    $(".letest_drivebox2").toggleClass("letest_driveboxclick2");
-                    $(".modal-backdrop2").toggleClass("overlay");
+                /*for right side popup*/
 
+
+                 $(".black_box_right h4.rightdriveno1").click(function() {
+
+                  $(".right_firstdrive .letest_drivebox2").addClass("box");
+
+                    $(".modal-backdrop").toggleClass("overlay");
                     var isOpen = $(".modal-backdrop").hasClass("overlay");
                     if (isOpen) {
                         $(".modal-backdrop").css("display", "block");
-
                     } else {
                         $(".modal-backdrop").css("display", "none");
 
                     }
-                });
-*/
 
+                    var isBox = $(".right_firstdrive .letest_drivebox2").hasClass("box");
+
+                    if (isBox) {
+                        $(".white_circle2").toggleClass("white_circleclick2");
+                        $(".lc_container2").toggleClass("lc_containerclick2");
+                        $(".letest_drivebox2").toggleClass("letest_driveboxclick2");
+
+
+                        $(".right_seconddrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_seconddrive .letest_drivebox2").removeClass("letest_driveboxclick2");
+                        $(".right_thirddrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_thirddrive .letest_drivebox").removeClass("letest_driveboxclick2");
+
+
+                       
+
+
+
+                    }
+
+
+
+
+                });
+
+
+
+                 $(".black_box_right h4.rightdriveno2").click(function() {
+
+                  $(".right_seconddrive .letest_drivebox2").addClass("box");
+
+                    $(".modal-backdrop").toggleClass("overlay");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
+
+                    var isBox = $(".right_seconddrive .letest_drivebox2").hasClass("box");
+
+                    if (isBox) {
+                        $(".right_seconddrive .white_circle2").toggleClass("white_circleclick2");
+                        $(".right_seconddrive .lc_container2").toggleClass("lc_containerclick2");
+                        $(".right_seconddrive .letest_drivebox2").toggleClass("letest_driveboxclick2");
+
+                        $(".right_firstdrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_firstdrive .letest_drivebox2").removeClass("letest_driveboxclick2");
+                        $(".right_thirddrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_thirddrive .letest_drivebox").removeClass("letest_driveboxclick2");
+
+                       
+
+
+
+                    }
+
+
+
+
+                });
+
+
+
+
+
+
+
+                    $(".black_box_right h4.rightdriveno3").click(function() {
+
+                  $(".right_thirddrive .letest_drivebox2").addClass("box");
+
+                    $(".modal-backdrop").toggleClass("overlay");
+                    var isOpen = $(".modal-backdrop").hasClass("overlay");
+                    if (isOpen) {
+                        $(".modal-backdrop").css("display", "block");
+                    } else {
+                        $(".modal-backdrop").css("display", "none");
+
+                    }
+
+                    var isBox = $(".right_thirddrive .letest_drivebox2").hasClass("box");
+
+                    if (isBox) {
+                        $(".right_thirddrive .white_circle2").toggleClass("white_circleclick2");
+                        $(".right_thirddrive .lc_container2").toggleClass("lc_containerclick2");
+                        $(".right_thirddrive .letest_drivebox2").toggleClass("letest_driveboxclick2");
+
+
+
+                        $(".right_firstdrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_firstdrive .letest_drivebox2").removeClass("letest_driveboxclick2");
+                        $(".right_seconddrive .lc_container").removeClass("lc_containerclick2");
+                        $(".right_seconddrive .letest_drivebox").removeClass("letest_driveboxclick2");
+
+                       
+
+
+
+                    }
+
+
+
+
+                });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
 
 
 
