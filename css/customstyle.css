@@ -4262,6 +4262,7 @@ ul.thumbnails-carousel li {
     margin-right: 5px;
     float: left;
     cursor: pointer;
+    opacity: 0.3;
 }
 .controls-background-reset {
     background: none !important;
@@ -4280,5 +4281,135 @@ ul.thumbnails-carousel li {
     padding-right: 0px;
 }
 .profile_overviewbox
+
+
+.imp_points h4 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.row.car_sliderbox .profile_overviewbox span.orange {
+    font-size: 26px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.thumbnails-carousel img {
+    height: 80px;
+    width: 150px;
+}
+
+.row.car_sliderbox #carousel-example-generic {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+.row.car_sliderbox .carousel-inner {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.row.car_sliderbox .indicators-fix{display: none !important;}
+
+.current_ridecheck img{height: 20px; width:20px;}
+
+li.active-thumbnail {
+    opacity: 1 !important;
+}
+
+
+.carousel-caption{bottom: 50px;}
+
+
+.modal-content.editpro_box {
+    background: #1d1923;
+    border: solid 1px #fff;
+    border-radius: 0px;
+    padding: 5px;
+    float: left;
+}
+
+.editpro_box .modal-header {
+    border: none;
+}
+
+.modal-dialog{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.modal-dialog.edit_profile{width: 550px;}
+
+.carousel-inner.avatar_box a img {
+    height: 60px;
+    width: 60px;
+    margin-left: 0px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    margin-bottom: 5%;
+    transition: all 0.5s;
+}
+
+.carousel-inner.avatar_box .col-md-12{height: 80px;}
+.carousel-inner.avatar_box a:hover img{ height:65px; width:65px;border:solid 1px orange;}
+
+
+.avatar_box .item{padding-left: 60px;}
+
+.avatar_box span.orange{margin-bottom: 50px;}
+
+.avtar_selection {margin-bottom: 50px;}
+
+.editpro_box ol.carousel-indicators {
+    display: none;
+}
+
+
+.modal-content.editpro_box .carousel-control.left ,.modal-content.editpro_box .carousel-control.right {
+    background: none;
+}
+
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top:none;
+    float: left;
+    width: 100%;
+}
+
+
+.editpro_box .inputMaterial:focus~label, .inputMaterial:valid~label {
+    top: -3px;
+    font-size: 14px;
+    color: red;
+}
+
+
+.editpro_box .inputMaterial {
+    font-size: 18px;
+    padding: 0px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #575757;
+    background: none;
+    font-family: titanium;
+    font-size: 14px;
+    padding-left: 0px;
+}
+
+
+select{background: #000;}
+
+.editpro_box i{color: #fff; text-shadow: none;}
+.editpro_box .close{opacity: 1;}
+
+
+body.plane_back{background: #100f1b;}
 /*for car slider ends*/
 /*new profile ui ends here */
