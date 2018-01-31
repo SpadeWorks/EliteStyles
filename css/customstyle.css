@@ -4413,3 +4413,85 @@ select{background: #000;}
 body.plane_back{background: #100f1b;}
 /*for car slider ends*/
 /*new profile ui ends here */
+
+
+
+
+/*testdrive details starts here*/
+
+.testdrivedetails_box .earn_box h3, .drive_completionbox h3 {
+    margin-top: 10px;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    text-transform: uppercase !important;
+}
+
+.testdrivedetails_box .earn_box {
+    border: none;
+}
+
+
+.earn_box span.small, .drive_completionbox span.small {
+    position: absolute;
+    top: 154px;
+    left: 31px;
+    font-family: titanium;
+    font-size: 15px;
+    float: left;
+}
+
+.detailed_box span.orange {
+    font-size: 14px;
+    color: #ff8d00;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.detailed_box ul.select2-selection__rendered {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.para {
+    margin-bottom: 20px;
+}
+
+
+.para p{font-family: titanium !important;  font-size: 16px;}
+
+
+.testdrivedetails_box .profileinfo_box span.orange {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.detailed_points.profileinfo_box h5{font-size: 16px;}
+
+
+.detailed_box li.select2-selection__choice {
+    position: relative;
+    top: 0px;
+    background: #41404e;
+    padding-left: 14px;
+    border-radius: 50px;
+    float: left;
+    padding-top: 5px;
+    font-family: titanium !important;
+    /* margin-left: 10px; */
+    font-size: 15px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+
+
+/*testdrive details ends here*/
