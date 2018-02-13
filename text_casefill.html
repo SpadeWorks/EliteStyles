@@ -48,6 +48,7 @@
                                                             <div class="row testcase_box">
                                                                 <h1>1. Add user</h1>
                                                                 <p>Having been home-schooled for the most part of her childhood, mostly in English classics and Victorian literature, Woolf began writing professionally in 1900. </p>
+                                                                <a href="#" class="guide_me"><h4 style="color: red; font-size: 14px;">Guide me to solve this test case</h4></a>
                                                                 <h4 class="testcase_title">Select the test case status</h4>
                                                                 <div class="row">
                                                                     <div class="test_progress">
@@ -253,6 +254,41 @@
                         </ul>
                     </div>
                 </div>
+
+
+                <div class="col-md-8 write_testdrivebox">
+                    <div class="col-md-12">
+                        <i class="material-icons pull-right close_discription">close</i>
+                    </div>
+
+                    <div class="col-md-12 testdrive_completionbox"> 
+                        <div class="col-md-11 pull-left"><h3>Monica Bradford </h3></div>  
+                        <div class="col-md-1 favourite"><i class="material-icons">star_border</i></div>
+                       
+                        <div class="col-md-12">
+                            <p>The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.</p>
+
+                            <img src="images/skype.jpg" class="img-responsive" />
+                        </div>
+                        
+                    </div>
+
+                    <hr />
+
+                    <div class="col-md-12"> 
+                        <div class="col-md-11 pull-left"><h3>Monica Bradford</h3></div>
+                       <div class="col-md-1 favourite"><i class="material-icons">star_border</i></div>
+                        <div class="col-md-12">
+                            <p>The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.The following plugins are almost famous. They all come with free activation solutions, however, some of them may not work on you.</p>
+
+                            <img src="images/skype.jpg" class="img-responsive" />
+                        </div>
+                        
+                    </div>
+
+
+
+                </div>
                 <div class="row overview">
                     <div class="container">
                         <div class="col-md-10 col-md-offset-1">
@@ -344,6 +380,24 @@ $('#carousel-example-vertical').bind('mousewheel', function(e){
 
 
         </script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+  $("a.guide_me").click(function(){
+
+$(".write_testdrivebox").css({"position":"fixed","right":"0px","height":"100%","transition":"0.5s"});
+});
+$("i.close_discription").click(function(){
+$(".write_testdrivebox").css({"position":"fixed","right":"-700px","transition":"0.5s"});
+
+});
+
+});
+</script>
+
+      
 </body>
 
 </html>

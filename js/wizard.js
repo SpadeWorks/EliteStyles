@@ -69,6 +69,8 @@ $("button.nextBtn").click(function(){
 });
 
 
+
+
 //datepicker script starts here
 
  var date_input=$('input[name="date"]'); //our date input has the name "date"

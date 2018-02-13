@@ -2251,7 +2251,7 @@ h1 {
     height: 100%;
 }
 
-s
+
 
 .header-title .title:after {
     content: '';
@@ -4780,6 +4780,30 @@ height: 700px !important;}
 
 #jqmeter-horizontal{background: url(../images/guage_1.png) no-repeat !important;}
 .therm .inner-therm{background: url(../images/guage_2.png)no-repeat !important;}
-.progress_drivebox{    background: #0a0a10;
+.progress_drivebox{background: #0a0a10;
     border: solid 1px #333;}
 /*test drive center ends here*/
+
+
+
+/*participation_box starts here*/
+.write_testdrivebox{    height: 100%;
+    background: #000;
+    position: fixed;
+    right: -700px;
+    top: 0px;
+    width: 700px;
+    z-index: 9999;
+border-left:solid 1px #fff;
+padding-top: 10px;}
+
+
+.write_testdrivebox p{ font-family: titanium; }
+
+.testdrive_completionbox{border-bottom: solid 1px #333; padding-bottom: 30px;}
+.favourite i {
+    padding-top: 24px;
+    color: #999;
+    font-size: 18px;
+}
+/*participationbox ends here*/
