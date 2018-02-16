@@ -2183,7 +2183,7 @@ h1 {
 
 /*welcome and landing text starts here*/
 
-.button {
+input .button {
     position: relative;
     padding: 10px 1.5em;
     border: none;
@@ -2195,7 +2195,7 @@ h1 {
     color: red;
 }
 
-.hud-box button.button.type1 {
+.hud-box input.button.type1 {
     font-size: 25px;
     margin-right: 100px;
 }
@@ -4005,7 +4005,7 @@ span.teams:hover{background: url(../images/teams2.png) no-repeat;height: 23px; w
     color: #828282;
 }
 
-.social_box{margin-top: 20px;}
+.social_box{margin-top: 20px; margin-bottom: 20px;}
 .social_box a i:hover{color:#5659b0;}
 
 
@@ -4754,34 +4754,7 @@ height: 700px !important;}
 
 
 /*test drive center start here*/
-.tdrive_center_box .carousel-control.left{margin-left: -100px !important;
-    background: none !important;}
 
-.central_Card{background: #07070a;
-    border: solid 1px #545454;}
-
-    .partcipant_enddate{margin-top: 10px;}
-
-    .partcipant_Section{background: #666; border-right: solid 1px #333;}
-
-    .enddate_Section{ background: #999; border-right: solid 1px #333;}
-
-    .enddate_Section img,.partcipant_Section img {
-    height: 15px;
-    width: 15px;
-}
-.enddate_Section span.orange{font-size: 10px;}
-.partcipant_Section span.orange{font-size: 10px; padding-left:10px; }
-.enddate_Section h5{font-family: titanium; color: #fff;}
-
-.partcipant_Section h5{font-family: titanium; color: #fff; padding-left: 10px;}
-.testcase_completionbox{margin-top: 10px;}
-
-
-#jqmeter-horizontal{background: url(../images/guage_1.png) no-repeat !important;}
-.therm .inner-therm{background: url(../images/guage_2.png)no-repeat !important;}
-.progress_drivebox{background: #0a0a10;
-    border: solid 1px #333;}
 /*test drive center ends here*/
 
 
@@ -4807,3 +4780,74 @@ padding-top: 10px;}
     font-size: 18px;
 }
 /*participationbox ends here*/
+
+
+
+
+
+
+/*testdrive central style starts here*/
+
+.tdrive_center_box .carousel-control.left{margin-left: -100px !important;
+    background: none !important;}
+
+.central_Card{background: #07070a;
+    border: solid 1px #545454;}
+
+    .partcipant_enddate{margin-top: 20px;
+        margin-bottom: 20px;}
+
+    
+
+
+
+    .enddate_Section img,.partcipant_Section img {
+    height: 20px;
+    width: 20px;
+}
+.enddate_Section span.orange{font-size: 10px;}
+.partcipant_Section span.orange{font-size: 10px; padding-left:10px; }
+.enddate_Section h5{font-family: titanium; color: #fff;}
+
+.partcipant_Section h5{font-family: titanium; color: #fff; padding-left: 10px;}
+.testcase_completionbox{margin-top: 10px;min-height: 105px;}
+
+
+#jqmeter-horizontal{background: url(../images/guage_1.png) no-repeat !important;}
+.therm .inner-therm{background: url(../images/guage_2.png)no-repeat !important;}
+.progress_drivebox{background: #0a0a10;
+    border: solid 1px #333;}
+
+.progress_drivebox h4{color: #ff8d00;}
+ul.dragrace_indicator{list-style-type: none; padding-left: 0px;}
+ul.dragrace_indicator li{float:left;}
+ul.dragrace_indicator li span{height:20px; width: 20px; background:red; border-radius: 50%; float:left; margin-left: 5px;}
+.partcipant_Section span.orange {
+    font-size: 12px;
+    padding-left: 10px;
+    text-transform: uppercase;  }
+
+.enddate_Section span.orange {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.progress_drivebox .enddate_Section canvas{ 
+    margin-top: 20px;}
+
+  
+
+    .race_type {
+    margin-top: 10px;
+}
+
+
+.point_board{margin-top: -100px;}
+
+.carousel-control.right{    right: -8%; }
+.carousel-control.left {left:-8%;}
+.testdrive_I_runbox .inforow{margin-bottom: 0px;}
+.testdrive_I_runbox h4{margin-bottom: 20px;}
+.testdrive_I_runbox .inforow h5{margin-top:0px; font-family: titanium;}
+.testdrive_I_runbox span.orange{font-size: 12px; text-transform: uppercase;}
+/*testdrive central style ends here*/
