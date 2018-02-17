@@ -4932,3 +4932,42 @@ li.select2-selection__choice{margin-top: 5px;margin-bottom: 5px;}
 .col-md-6 .partcipant_Section{border:solid 1px #333 !important;}
 
 /*testdrive central style ends here*/
+
+
+
+
+/*prize style start here*/
+
+.prize_description span.orange {
+    letter-spacing: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 5px 5px #000000;
+}
+
+.prize_description h2{font-size: 45px; }
+
+.prize_description p{font-family: titanium;}
+
+.prize_model img{-webkit-animation: prize_rorate 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: prize_rorate 3s infinite;
+animation-iteration-count: infinite;
+animation-direction: alternate;}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes prize_rorate {
+    from {top: -100px;}
+    to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes prize_rorate {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(350deg);}
+}
+
+.more_prizes{    margin-top: 207px;
+    margin-left: 88px;
+    font-family: titanium;}
+/*prize styles ends here*/
