@@ -4847,7 +4847,88 @@ ul.dragrace_indicator li span{height:20px; width: 20px; background:red; border-r
 .carousel-control.right{    right: -8%; }
 .carousel-control.left {left:-8%;}
 .testdrive_I_runbox .inforow{margin-bottom: 0px;}
-.testdrive_I_runbox h4{margin-bottom: 20px;}
-.testdrive_I_runbox .inforow h5{margin-top:0px; font-family: titanium;}
+.testdrive_I_runbox h4{margin-bottom: 20px; font-size: 24px;}
+.testdrive_I_runbox .inforow h5{    font-family: titanium;
+    font-size: 12px;
+    padding-top: 0px !important;
+    margin-top: 0px !important;}
 .testdrive_I_runbox span.orange{font-size: 12px; text-transform: uppercase;}
+
+.testdrive_I_runbox .testd_box{padding-top: 0px;margin-top: -3px;    margin-bottom: 10px;}
+
+span.up_no{margin-top:-3px; font-size: 17px; color: green;}
+
+
+.testdrive_I_runbox .testd_box span.glyphicon-triangle-top {
+    font-size: 10px;
+    color: green;
+}
+
+span.big_text{font-size: 20px;}
+
+.outofbox{margin-top: 3px;}
+.outof{margin-top: -10px;}
+
+
+.testdrive_I_runbox .social_box{margin-top: 0px;}
+
+.testdrive_I_runbox .social_box a {
+    float: left;
+    margin-left: 19px;
+}
+
+.testdrive_I_runbox .social_box a:first-child{margin-left: 0px;}
+
+
+.testdrive_I_runbox .social_box a i:hover{color: red;}
+
+
+.testdrive_I_runbox ul.dragrace_indicator li span {
+    height: 15px !important;
+    width: 15px !important;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    /* margin-left: 5px; */
+}
+
+ul.streetrace_indicator{list-style-type: none;padding-left: 0px;}
+
+.testdrive_I_runbox ul.streetrace_indicator li span {
+    height: 15px !important;
+    width: 15px !important;
+    background: red;
+    border-radius: 50%;
+    float: left;
+    /* margin-left: 5px; */
+}
+
+.testdrive_I_runbox ul.streetrace_indicator li span{  height: 15px !important;
+    width: 15px !important;
+    background: #f8971d;
+    border-radius: 50%;
+    float: left;
+    /* margin-left: 5px; */}
+
+    ul.streetrace_indicator li {
+    float: left;
+}
+
+
+ul.streetrace_indicator li span{margin-left: 5px;}
+
+
+
+
+.testdrive_I_runbox ul.dragrace_indicator{margin-top: 2px; margin-bottom: 2px}
+.testdrive_I_runbox ul.dragrace_indicator li:first-child span{margin-left: 0px;}
+
+.testdrive_I_runbox h5.race_neme{text-transform: uppercase; margin-top: 3px !important;}
+
+li.select2-selection__choice{margin-top: 5px;margin-bottom: 5px;}
+
+.enddate_Section:first-child{border-right:solid 1px #333;}
+
+.col-md-6 .partcipant_Section{border:solid 1px #333 !important;}
+
 /*testdrive central style ends here*/
