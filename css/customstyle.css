@@ -4971,3 +4971,64 @@ animation-direction: alternate;}
     margin-left: 88px;
     font-family: titanium;}
 /*prize styles ends here*/
+
+
+
+
+/*my ride styeles starts here*/
+
+.outer_ride img {
+    /* height: 130px; */
+    /* position: absolute; */
+    /* z-index: 62; */
+    /* left: 80px; */
+    position: absolute;
+    left: 72px;
+    top: 19px;
+        -webkit-animation: rotate 30s infinite;
+    animation-play-state: running;
+}
+.ride_ring img {
+    /* height: 100px; */
+    /* position: relative; */
+    /* left: 15px; */
+    /* top: 14px; */
+    /* z-index: 51; */
+    position: absolute;
+    left: 87px;
+    top: 31px;
+        -webkit-animation: rotate 5s infinite;
+          animation-direction:reverse;
+}
+
+
+.ride_image img{
+    position:relative;
+
+    left: 116px;
+    top: 58px;
+}
+
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+.initial_ride{position: absolute;top: 250px; left: 300px;}
+
+.ride_track {
+    width: 100%;
+    /* background: red; */
+    position: absolute;
+    border-bottom: solid;
+    margin-top: 160px;
+}
+.ride_track img{position: relative;
+left: 0px;}
+/*my ride styles ends here*/
